@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.exe" -prj "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/Test_KbdVGA_Test_KbdVGA_sch_tb_beh.prj" "work.Test_KbdVGA_Test_KbdVGA_sch_tb" 
