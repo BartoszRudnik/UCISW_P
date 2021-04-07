@@ -26,6 +26,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bumpersTestBench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bumpersTestBench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="bumpersTestBench_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -38,18 +41,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1616149952" xil_pn:in_ck="8401233235258167459" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1616149952">
+    <transform xil_pn:end_ts="1617778888" xil_pn:in_ck="3004093104262615663" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/FSM_SendByte.vhd"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/TBW_FSM_SendByte.vhd"/>
+      <outfile xil_pn:name="bumpersTestBench.vhd"/>
+      <outfile xil_pn:name="movingBumpers.vhd"/>
       <outfile xil_pn:name="najnowszyTestBench.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1616144586" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1305905746923798135" xil_pn:start_ts="1616144586">
+    <transform xil_pn:end_ts="1617778803" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1611569196088745805" xil_pn:start_ts="1617778803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1616149792" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1187740276520020505" xil_pn:start_ts="1616149790">
+    <transform xil_pn:end_ts="1617778805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8935325018207946325" xil_pn:start_ts="1617778803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Test_KbdVGA.vhf"/>
@@ -58,32 +63,34 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1616149952" xil_pn:in_ck="-1205357880038741277" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1616149952">
+    <transform xil_pn:end_ts="1617778888" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/FSM_SendByte.vhd"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/TBW_FSM_SendByte.vhd"/>
       <outfile xil_pn:name="Test_KbdVGA.vhf"/>
+      <outfile xil_pn:name="bumpersTestBench.vhd"/>
+      <outfile xil_pn:name="movingBumpers.vhd"/>
       <outfile xil_pn:name="najnowszyTestBench.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1616149956" xil_pn:in_ck="-1205357880038741277" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8303545416316771332" xil_pn:start_ts="1616149952">
+    <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5157100465130792335" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="bumpersTestBench_beh.prj"/>
+      <outfile xil_pn:name="bumpersTestBench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1616149956" xil_pn:in_ck="-7422769549137289828" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6628671926526804688" xil_pn:start_ts="1616149956">
+    <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-9113871031493013107" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3816216900839516133" xil_pn:start_ts="1617778894">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="bumpersTestBench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

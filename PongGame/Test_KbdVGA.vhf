@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Test_KbdVGA.vhf
--- /___/   /\     Timestamp : 03/19/2021 11:29:51
+-- /___/   /\     Timestamp : 04/07/2021 08:52:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
