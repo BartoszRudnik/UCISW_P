@@ -57,6 +57,7 @@
     <transform xil_pn:end_ts="1617778805" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8935325018207946325" xil_pn:start_ts="1617778803">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="Test_KbdVGA.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1616144589" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2759762982050746347" xil_pn:start_ts="1616144589">
@@ -66,6 +67,7 @@
     <transform xil_pn:end_ts="1617778888" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/FSM_SendByte.vhd"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/TBW_FSM_SendByte.vhd"/>
       <outfile xil_pn:name="Test_KbdVGA.vhf"/>
@@ -76,6 +78,7 @@
     <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5157100465130792335" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="bumpersTestBench_beh.prj"/>
@@ -88,6 +91,7 @@
     <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-9113871031493013107" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3816216900839516133" xil_pn:start_ts="1617778894">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="bumpersTestBench_isim_beh.wdb"/>

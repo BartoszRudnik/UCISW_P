@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/bumpersTestBench_isim_beh.exe" -prj "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/bumpersTestBench_beh.prj" "work.bumpersTestBench" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest_isim_beh.exe" -prj "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest_beh.prj" "work.ballTest" 
