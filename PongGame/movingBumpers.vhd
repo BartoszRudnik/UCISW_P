@@ -36,7 +36,7 @@ begin
 			bumper1TmpPosition <= startValue;
 			bumper2TmpPosition <= startValue;
 			
-		end if
+		end if;
 	
 		if rising_edge(clk) then
 			

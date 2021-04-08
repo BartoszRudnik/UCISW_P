@@ -1,4 +1,4 @@
-library IEEE;
+ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
@@ -11,7 +11,7 @@ entity ball is
            clk : in  STD_LOGIC);
 end ball;
 
-architecture Behavioral of ball is
+	architecture Behavioral of ball is
 
 	signal movingUp : std_logic := '1';
 	signal movingRight : std_logic := '1';

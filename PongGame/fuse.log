@@ -1,20 +1,20 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest_isim_beh.exe -prj D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest_beh.prj work.ballTest 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/v2_testBall_isim_beh.exe -prj D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/v2_testBall_beh.prj work.v2_testBall 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ball.vhd" into library work
-Parsing VHDL file "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest.vhd" into library work
+Parsing VHDL file "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/testBall.vhd" into library work
+Parsing VHDL file "D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/v2_testBall.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture behavioral of entity ball [ball_default]
-Compiling architecture behavior of entity balltest
+Compiling architecture behavioral of entity testBall [testball_default]
+Compiling architecture behavior of entity v2_testball
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/ballTest_isim_beh.exe
-Fuse Memory Usage: 36544 KB
-Fuse CPU Usage: 499 ms
+Built simulation executable D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/v2_testBall_isim_beh.exe
+Fuse Memory Usage: 36100 KB
+Fuse CPU Usage: 577 ms

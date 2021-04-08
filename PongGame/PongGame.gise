@@ -44,6 +44,7 @@
     <transform xil_pn:end_ts="1617778888" xil_pn:in_ck="3004093104262615663" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/FSM_SendByte.vhd"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/TBW_FSM_SendByte.vhd"/>
       <outfile xil_pn:name="bumpersTestBench.vhd"/>
@@ -67,6 +68,7 @@
     <transform xil_pn:end_ts="1617778888" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/FSM_SendByte.vhd"/>
       <outfile xil_pn:name="C:/Users/Barto/Downloads/Test_KbdVGA/TBW_FSM_SendByte.vhd"/>
@@ -78,6 +80,8 @@
     <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-8858642832671419217" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5157100465130792335" xil_pn:start_ts="1617778888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -91,6 +95,7 @@
     <transform xil_pn:end_ts="1617778894" xil_pn:in_ck="-9113871031493013107" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3816216900839516133" xil_pn:start_ts="1617778894">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
