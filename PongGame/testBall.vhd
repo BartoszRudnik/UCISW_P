@@ -34,7 +34,7 @@ end testBall;
 	signal movingRight : std_logic := '1';
 
 	signal velocity_x : unsigned(3 downto 0) := "1111";
-	signal velocity_y : unsigned(3 downto 0) := "0000";
+	signal velocity_y : unsigned(3 downto 0) := "1111";
 
 	signal x_tmpPosition : unsigned(15 downto 0) := "1000000000000000";
 	signal y_tmpPosition : unsigned(15 downto 0) := "1000000000000000";

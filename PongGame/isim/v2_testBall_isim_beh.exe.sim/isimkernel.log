@@ -2,14 +2,14 @@ Command line:
    v2_testBall_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50712
+     -socket  50960
 
-Thu Apr 08 16:51:00 2021
+Fri Apr 09 09:35:20 2021
 
 
- Elaboration Time: 0.015625 sec
+ Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5150.36 Meg
+ Current Memory Usage: 5150.37 Meg
 
  Total Signals          : 33
  Total Nets             : 146
@@ -21,9 +21,9 @@ Thu Apr 08 16:51:00 2021
  Total Scalar Nets and Variables : 689
 Total Line Count : 60
 
- Total Simulation Time: 2.09375 sec
+ Total Simulation Time: 2.875 sec
 
- Current Memory Usage: 4993.07 Meg
+ Current Memory Usage: 4993.08 Meg
 
-Thu Apr 08 16:52:43 2021
+Fri Apr 09 09:37:03 2021
 

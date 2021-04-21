@@ -16,8 +16,8 @@ architecture Behavioral of movingBumpers is
 	signal bumper1TmpPosition : unsigned(15 downto 0) := "1000000000000000";
 	signal bumper2TmpPosition : unsigned(15 downto 0) := "1000000000000000";
 
-	constant maxValue : unsigned(15 downto 0) := "111111111111111";
-	constant minValue : unsigned(15 downto 0) := "000000000000000";
+	constant maxValue : unsigned(15 downto 0) := "1111111111111111";
+	constant minValue : unsigned(15 downto 0) := "0000000000000000";
 	constant startValue : unsigned(15 downto 0) := "1000000000000000";
 	
 	constant keyW : unsigned(7 downto 0) := "00011101"; --hex(1D)

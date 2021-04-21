@@ -1,0 +1,29 @@
+Command line:
+   bumpersTestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50952
+
+Fri Apr 09 09:33:03 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5150.35 Meg
+
+ Total Signals          : 14
+ Total Nets             : 75
+ Total Signal Drivers   : 7
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 6
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 638
+Total Line Count : 18
+
+ Total Simulation Time: 0.671875 sec
+
+ Current Memory Usage: 5464.92 Meg
+
+Fri Apr 09 09:33:38 2021
+

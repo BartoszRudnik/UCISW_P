@@ -36,13 +36,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>bumpersTestBench.vhd</SelectedItem>
+         <SelectedItem>testBall.vhd</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000f100000001000000000000005b00000001000000000000005d00000001000000000000013a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000001000000000000000000000000000000000000020d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000f100000001000000000000005b00000001000000000000005d0000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>bumpersTestBench.vhd</CurrentItem>
+      <CurrentItem>testBall.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -71,7 +71,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -86,13 +86,13 @@
          <ClosedNode>/Test_KbdVGA_Test_KbdVGA_sch_tb - behavioral D:|STUDIA|VI Semestr|UCiSW2_P|UCISW_P|PongGame|testBench.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>bumpersTestBench - behavior (D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/bumpersTestBench.vhd)</SelectedItem>
+         <SelectedItem>uut - testBall - Behavioral (D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/testBall.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ca000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ca0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>bumpersTestBench - behavior (D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/bumpersTestBench.vhd)</CurrentItem>
+      <CurrentItem>uut - testBall - Behavioral (D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/testBall.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -113,13 +113,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
