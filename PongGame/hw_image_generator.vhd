@@ -26,7 +26,7 @@ USE ieee.std_logic_1164.all;
 ENTITY hw_image_generator IS
   GENERIC(	
 	top_border_y : INTEGER := 720;	
-	bottom_border_y : INTEGER := 0;
+	bottom_border_y : INTEGER := 0
   );
   
   PORT(
@@ -52,17 +52,29 @@ BEGIN
   PROCESS(disp_ena, row, column)
   BEGIN
 
-    IF(disp_ena = '1') THEN        --display time
+    IF(disp_ena = '1') THEN        
       IF(row = top_border_y OR row = bottom_border_y) THEN
         red <= (OTHERS => '0');
         green  <= (OTHERS => '0');
         blue <= (OTHERS => '1');
-      ELSE
-        red <= (OTHERS => '1');
+      ELSIF((column >= 20 AND column <= 30) AND (row >= bumper1_start_y AND row <= bumper1_start_y + bumper_length_y)) THEN
+        red <= (OTHERS => '0');
         green  <= (OTHERS => '1');
         blue <= (OTHERS => '0');
+		ELSIF((column >= 1250 AND column <= 1260) AND (row >= bumper1_start_y AND row <= bumper1_start_y + bumper_length_y)) THEN
+		  red <= (OTHERS => '0');
+        green  <= (OTHERS => '1');
+        blue <= (OTHERS => '0');
+		ELSIF((column >= ball_x AND column <= ball_x + ball_radius) AND (row >= ball_y AND row <= ball_y + ball_radius)) THEN
+		  red <= (OTHERS => '1');
+        green  <= (OTHERS => '0');
+        blue <= (OTHERS => '0');
+		ELSE
+		  red <= (OTHERS => '0');
+		  green <= (OTHERS => '0');
+        blue <= (OTHERS => '0');
       END IF;
-    ELSE                           --blanking time
+    ELSE                          
       red <= (OTHERS => '0');
       green <= (OTHERS => '0');
       blue <= (OTHERS => '0');

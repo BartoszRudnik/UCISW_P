@@ -7,18 +7,21 @@ entity movingBumpers is
 			  clk : in STD_LOGIC;
 			  isPressed : in STD_LOGIC;
 			  reset : in STD_LOGIC;
-           bumper1Position : out unsigned(15 downto 0);
-           bumper2Position : out unsigned(15 downto 0));
+           bumper1Position : out INTEGER;
+           bumper2Position : out INTEGER);
 end movingBumpers;
 
 architecture Behavioral of movingBumpers is
 
-	signal bumper1TmpPosition : unsigned(15 downto 0) := "1000000000000000";
-	signal bumper2TmpPosition : unsigned(15 downto 0) := "1000000000000000";
-
-	constant maxValue : unsigned(15 downto 0) := "1111111111111111";
-	constant minValue : unsigned(15 downto 0) := "0000000000000000";
-	constant startValue : unsigned(15 downto 0) := "1000000000000000";
+	signal bumper1TmpPosition : INTEGER := 360;
+	signal bumper2TmpPosition : INTEGER := 360;
+	
+	constant bumperHeight : INTEGER := 10;
+	
+	constant maxValue : INTEGER := 720 - bumperHeight;	
+	constant minValue : INTEGER := 0;
+	
+	constant startValue : INTEGER := 360;
 	
 	constant keyW : unsigned(7 downto 0) := "00011101"; --hex(1D)
 	constant keyS : unsigned(7 downto 0) := "00011011"; --hex(1B)

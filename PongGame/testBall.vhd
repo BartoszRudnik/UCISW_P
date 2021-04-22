@@ -4,15 +4,17 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity testBall is
     Port ( reset : in  STD_LOGIC;
-			  bumper1_Position : in unsigned(15 downto 0);  
-			  bumper2_Position : in unsigned(15 downto 0);
+			  bumper1_Position : in INTEGER;  
+			  bumper2_Position : in INTEGER;
 			  player1_score : out unsigned(3 downto 0);
 			  player2_score : out unsigned(3 downto 0);
-           x_position : out  unsigned (15 downto 0);
-           y_position : out  unsigned (15 downto 0);
+           x_position : out INTEGER;
+           y_position : out INTEGER;
 			  test_vertical : out STD_LOGIC;
 			  test_horizontal : out STD_LOGIC;
 			  game_finished : out STD_LOGIC;
+			  ball_radius : out INTEGER;
+			  bumper_length : out INTEGER;
            clk : in  STD_LOGIC);
 end testBall;
 
@@ -25,7 +27,7 @@ end testBall;
 	
 	constant max_score : unsigned(3 downto 0) := "1010";
 	
-	signal bumperLength : unsigned(15 downto 0) := "0010000000000000";
+	signal bumperLength : INTEGER := 10;
 	
 	signal vertical_hit : STD_LOGIC := '0';
 	signal horizontal_hit : STD_LOGIC := '0';	
@@ -33,18 +35,22 @@ end testBall;
 	signal movingUp : std_logic := '1';
 	signal movingRight : std_logic := '1';
 
-	signal velocity_x : unsigned(3 downto 0) := "1111";
-	signal velocity_y : unsigned(3 downto 0) := "1111";
+	signal velocity_x : INTEGER := 4;
+	signal velocity_y : INTEGER := 4;
 
-	signal x_tmpPosition : unsigned(15 downto 0) := "1000000000000000";
-	signal y_tmpPosition : unsigned(15 downto 0) := "1000000000000000";
+	signal x_tmpPosition : INTEGER := 640;
+	signal y_tmpPosition : INTEGER := 360;
 
-	constant maxValue : unsigned(15 downto 0) := "1000000011111111";
-	constant minValue : unsigned(15 downto 0) := "0000000011111111";
+	constant maxValue_x : INTEGER := 1280;
+	constant maxValue_y : INTEGER := 720;
+		
 	constant maxVelocity : unsigned(3 downto 0) := "1111";
 	constant minVelocity : unsigned(3 downto 0) := "1000";
 		
-	constant start_position : unsigned(15 downto 0) := "1000000000000000";
+	constant start_position_x : INTEGER := 640;
+	constant start_position_y : INTEGER := 360;
+	
+	constant bumper_border_distance : INTEGER := 30;
 
 begin
 
@@ -60,8 +66,8 @@ begin
 	
 		if rising_edge(reset) then
 		
-			x_tmpPosition <= start_position;
-			y_tmpPosition <= start_position;
+			x_tmpPosition <= start_position_x;
+			y_tmpPosition <= start_position_y;
 			
 			player1_tmpScore <= "0000";
 			player2_tmpScore <= "0000";
@@ -84,63 +90,63 @@ begin
 		
 		if rising_edge(clk) then		
 			
-			if(movingRight = '1' AND x_tmpPosition < maxValue) then
+			if(movingRight = '1' AND x_tmpPosition < maxValue_x) then
 			
-				if(x_tmpPosition + velocity_x < maxValue) then
+				if(x_tmpPosition + velocity_x < maxValue_x) then
 			
 					x_tmpPosition <= x_tmpPosition + velocity_x;
 					
 				else
 					
-					x_tmpPosition <= maxValue;
+					x_tmpPosition <= maxValue_x;
 					
 				end if;				
 			
 			end if;
 			
-			if(movingRight = '0' AND x_tmpPosition > minValue) then
+			if(movingRight = '0' AND x_tmpPosition > 0) then
 			
-				if(x_tmpPosition - velocity_x > minValue) then
+				if(x_tmpPosition - velocity_x > 0) then
 			
 					x_tmpPosition <= x_tmpPosition - velocity_x;
 				
 				else
 				
-					x_tmpPosition <= minValue;
+					x_tmpPosition <= 0;
 				
 				end if;
 				
 			end if;
 			
-			if(movingUp = '1' AND y_tmpPosition < maxValue) then
+			if(movingUp = '1' AND y_tmpPosition < maxValue_y) then
 			
-				if(y_tmpPosition + velocity_y < maxValue) then
+				if(y_tmpPosition + velocity_y < maxValue_y) then
 			
 					y_tmpPosition <= y_tmpPosition + velocity_y;
 					
 				else
 				
-					y_tmpPosition <= maxValue;
+					y_tmpPosition <= maxValue_y;
 					
 				end if;				
 			
 			end if;
 			
-			if(movingUp = '0' AND y_tmpPosition > minValue) then
+			if(movingUp = '0' AND y_tmpPosition > 0) then
 			
-				if(y_tmpPosition - velocity_y > minValue) then
+				if(y_tmpPosition - velocity_y > 0) then
 			
 					y_tmpPosition <= y_tmpPosition - velocity_y;
 					
 				else
 				
-					y_tmpPosition <= minValue;
+					y_tmpPosition <= 0;
 					
 				end if;
 							
 			end if;
 			
-			if (x_tmpPosition = minValue) then
+			if (x_tmpPosition < bumper_border_distance) then
 			
 				if(bumper1_Position + bumperLength > y_tmpPosition AND movingRight = '0' AND bumper1_Position - bumperLength < y_tmpPosition) then
 			
@@ -150,14 +156,14 @@ begin
 				
 					player2_tmpScore <= player2_tmpScore + 1;
 					
-					x_tmpPosition <= start_position;
-					y_tmpPosition <= start_position;
+					x_tmpPosition <= start_position_x;
+					y_tmpPosition <= start_position_y;
 			
 				end if;				
 			
 			end if;
 			
-			if (x_tmpPosition = maxValue) then
+			if (x_tmpPosition > maxValue_x - bumper_border_distance) then
 			
 				if(bumper2_Position + bumperLength > y_tmpPosition AND movingRight = '1' AND bumper2_Position - bumperLength < y_tmpPosition) then
 			
@@ -167,14 +173,14 @@ begin
 				
 					player1_tmpScore <= player1_tmpScore + 1;
 					
-					x_tmpPosition <= start_position;
-					y_tmpPosition <= start_position;
+					x_tmpPosition <= start_position_x;
+					y_tmpPosition <= start_position_y;
 			
 				end if;
 			
 			end if;
 			
-			if((y_tmpPosition = maxValue AND movingUp = '1') OR (y_tmpPosition = minValue AND movingUp = '0')) then
+			if((y_tmpPosition = maxValue_y AND movingUp = '1') OR (y_tmpPosition = 0 AND movingUp = '0')) then
 			
 				vertical_hit <= '1';				
 			
@@ -185,8 +191,8 @@ begin
 				player1_tmpScore <= "0000";
 				player2_tmpScore <= "0000";
 				
-				x_tmpPosition <= start_position;
-				y_tmpPosition <= start_position;
+				x_tmpPosition <= start_position_x;
+				y_tmpPosition <= start_position_y;
 				
 				tmp_gameStatus <= '1';
 			
@@ -206,6 +212,9 @@ begin
 	player2_score <= player2_tmpScore;
 	
 	game_finished <= tmp_gameStatus;
+	
+	ball_radius <= 4;
+	bumper_length <= bumperLength;
 
 end Behavioral;
 
