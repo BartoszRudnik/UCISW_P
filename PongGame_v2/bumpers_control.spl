@@ -1,0 +1,11 @@
+[Inputs]
+clk
+isPressed
+reset
+=keyboardOutput[7:0]=
+[Outputs]
+bumper1Position
+bumper2Position
+bumper1_x
+bumper2_x
+[BiDir]

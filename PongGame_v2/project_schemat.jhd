@@ -1,0 +1,11 @@
+MODULE project_schemat
+	SUBMODULE PS2_Kbd
+		INSTANCE XLXI_1
+	SUBMODULE ball_control
+		INSTANCE XLXI_2
+	SUBMODULE bumpers_control
+		INSTANCE XLXI_3
+	SUBMODULE image_generator
+		INSTANCE XLXI_4
+	SUBMODULE vga_control
+		INSTANCE XLXI_5

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work bumpers_control.vhd -prj PongGame_v2 -o bumpers_control.spl -module bumpers_control -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 bumpers_control.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame_v2/bumpers_control.sym} 
+vhdtdtfi -lib work bumpers_control.vhd -prj PongGame_v2 -o bumpers_control.spl -module bumpers_control -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 bumpers_control.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame_v2/bumpers_control.sym} 

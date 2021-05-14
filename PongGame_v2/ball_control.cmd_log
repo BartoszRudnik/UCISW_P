@@ -1,0 +1,6 @@
+vhdtdtfi -lib work ball_control.vhd -prj PongGame_v2 -o ball_control.spl -module ball_control -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 ball_control.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame_v2/ball_control.sym} 
+vhdtdtfi -lib work ball_control.vhd -prj PongGame_v2 -o ball_control.spl -module ball_control -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 ball_control.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame_v2/ball_control.sym} 
+vhdtdtfi -lib work ball_control.vhd -prj PongGame_v2 -o ball_control.spl -module ball_control -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 ball_control.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame_v2/ball_control.sym} 

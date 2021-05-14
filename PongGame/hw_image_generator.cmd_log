@@ -1,0 +1,2 @@
+vhdtdtfi -lib work hw_image_generator.vhd -prj PongGame -o hw_image_generator.spl -module hw_image_generator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 hw_image_generator.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/hw_image_generator.sym} 

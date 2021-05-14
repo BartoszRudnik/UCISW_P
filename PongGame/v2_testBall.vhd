@@ -7,7 +7,7 @@ END v2_testBall;
  
 ARCHITECTURE behavior OF v2_testBall IS 
  
-    COMPONENT testBall
+    COMPONENT ball_control
     PORT(
          reset : IN  std_logic;
          bumper1_Position : IN  unsigned(15 downto 0);

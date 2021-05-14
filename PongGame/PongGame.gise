@@ -26,14 +26,25 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_KbdVGA_Test_KbdVGA_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ball.spl"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bumpersTestBench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="hw_image_generator.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="hw_image_generator.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="movingBumpers.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="movingBumpers.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="testBall.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="testBall.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="v2_testBall.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="v2_testBall.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="v2_testBall_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="v2_testBall_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="v2_testBall_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="vga_controller.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="vga_controller.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
@@ -60,6 +71,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Test_KbdVGA.vhf"/>
     </transform>

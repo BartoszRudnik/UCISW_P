@@ -1,0 +1,12 @@
+[Inputs]
+pixel_clk
+reset_n
+[Outputs]
+h_sync
+v_sync
+disp_ena
+column
+row
+n_blank
+n_sync
+[BiDir]

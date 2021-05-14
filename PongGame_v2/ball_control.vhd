@@ -6,8 +6,8 @@ entity ball_control is
     Port ( reset : in  STD_LOGIC;
 			  bumper1_Position : in INTEGER;  
 			  bumper2_Position : in INTEGER;
-			  player1_score : out unsigned(3 downto 0);
-			  player2_score : out unsigned(3 downto 0);
+			  player1_score : out INTEGER;
+			  player2_score : out INTEGER;
            x_position : out INTEGER;
            y_position : out INTEGER;
 			  test_vertical : out STD_LOGIC;
@@ -22,8 +22,8 @@ end ball_control;
 	
 	signal tmp_gameStatus : STD_LOGIC := '0';
 	
-	signal player1_tmpScore : unsigned(3 downto 0) := "0000";
-	signal player2_tmpScore : unsigned(3 downto 0) := "0000";
+	signal player1_tmpScore : INTEGER := 0;
+	signal player2_tmpScore : INTEGER := 0;
 	
 	constant max_score : unsigned(3 downto 0) := "1010";
 	
@@ -69,8 +69,8 @@ begin
 			x_tmpPosition <= start_position_x;
 			y_tmpPosition <= start_position_y;
 			
-			player1_tmpScore <= "0000";
-			player2_tmpScore <= "0000";
+			player1_tmpScore <= 0;
+			player2_tmpScore <= 0;
 		
 		end if;
 		
@@ -188,8 +188,8 @@ begin
 			
 			if(player1_tmpScore >= max_score OR player2_tmpScore >= max_score) then
 			
-				player1_tmpScore <= "0000";
-				player2_tmpScore <= "0000";
+				player1_tmpScore <= 0;
+				player2_tmpScore <= 0;
 				
 				x_tmpPosition <= start_position_x;
 				y_tmpPosition <= start_position_y;

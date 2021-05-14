@@ -1,0 +1,5 @@
+MODULE schemat_calego_ukladu
+	SUBMODULE testBall
+		INSTANCE XLXI_1
+	SUBMODULE FSM_SendByte
+		INSTANCE XLXI_2

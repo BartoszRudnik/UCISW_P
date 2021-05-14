@@ -1,7 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-ENTITY vga_controller IS
+ENTITY vga_control IS
   GENERIC(
     h_pulse  : INTEGER := 208;    --horiztonal sync pulse width in pixels
     h_bp     : INTEGER := 336;    --horiztonal back porch width in pixels
@@ -23,9 +23,9 @@ ENTITY vga_controller IS
     row       : OUT  INTEGER;    --vertical pixel coordinate
     n_blank   : OUT  STD_LOGIC;  --direct blacking output to DAC
     n_sync    : OUT  STD_LOGIC); --sync-on-green output to DAC
-END vga_controller;
+END vga_control;
 
-ARCHITECTURE behavior OF vga_controller IS
+ARCHITECTURE behavior OF vga_control IS
   CONSTANT h_period : INTEGER := h_pulse + h_bp + h_pixels + h_fp; --total number of pixel clocks in a row
   CONSTANT v_period : INTEGER := v_pulse + v_bp + v_pixels + v_fp; --total number of rows in column
 BEGIN

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work testBall.vhd -lib work v2_testBall.vhd -prj PongGame -o v2_testBall.spl -module v2_testBall -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 v2_testBall.spl {D:/STUDIA/VI Semestr/UCiSW2_P/UCISW_P/PongGame/v2_testBall.sym} 

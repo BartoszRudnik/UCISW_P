@@ -1,0 +1,16 @@
+[Inputs]
+reset
+bumper1_Position
+bumper2_Position
+clk
+[Outputs]
+x_position
+y_position
+test_vertical
+test_horizontal
+game_finished
+ball_radius
+bumper_length
+=player1_score[3:0]=
+=player2_score[3:0]=
+[BiDir]
